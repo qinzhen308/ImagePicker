@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CropImageView">
+        <attr name="cropMaskColor" format="color"/>
+        <attr name="cropBorderColor" format="color"/>
+        <attr name="cropBorderWidth" format="dimension"/>
+        <attr name="cropFocusWidth" format="dimension"/>
+        <attr name="cropFocusHeight" format="dimension"/>
+        <attr name="cropStyle" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="TipView">
+        <!-- 显示的数量 -->
+        <attr name="text" format="integer" />
+        <!-- 文字大小，0-1，1为默认，值越小，文字越小 -->
+        <attr name="textMargin" format="float" />
+        <!-- 数量文字的颜色 -->
+        <attr name="textColor" format="reference|color" />
+        <!-- 最大数量，超出这个数字会显示 这个数字+ -->
+        <attr name="textMax" format="integer" />
+        <!-- 背景圆的颜色 -->
+        <attr name="circleColor" format="reference|color" />
+    </declare-styleable>
+
+</resources>

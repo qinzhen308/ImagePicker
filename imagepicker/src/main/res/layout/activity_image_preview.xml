@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <com.lzy.imagepicker.view.ViewPagerFixed
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" />
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#cc22292c"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_back_press"
+            android:padding="14dp"
+            android:src="@mipmap/btn_back_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="选择图片"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <com.lzy.imagepicker.view.SuperCheckBox
+            android:id="@+id/cb_check"
+            style="@style/SuperCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:drawablePadding="4dp"
+            android:includeFontPadding="true"
+            android:paddingLeft="8dp"
+            android:text="选择"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/weixuan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/btn_weixuan"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/xuanzhelayout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.lzy.imagepicker.view.TipView
+                android:id="@+id/xuanzhe"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:visibility="visible"
+                app:circleColor="#36a95c"
+                app:text="1"
+                app:textColor="@color/white"
+                app:textMargin="5"
+                app:textMax="9"></com.lzy.imagepicker.view.TipView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_del"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_back_press"
+            android:padding="14dp"
+            android:src="@mipmap/ic_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#cc22292c"
+        android:visibility="gone">
+
+        <com.lzy.imagepicker.view.SuperCheckBox
+            android:id="@+id/cb_origin"
+            style="@style/SuperCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="8dp"
+            android:text="原图(3.07M)"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_bg_complete"
+            android:minHeight="30dp"
+            android:minWidth="50dp"
+            android:padding="8dp"
+            android:text="完成(3/9)"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</RelativeLayout>

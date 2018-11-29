@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_body">#cc22292c</color>
+    <color name="black">#000000</color>
+    <color name="status_bar">#303135</color>
+    <color name="top_bar">#9f556061</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 马赛克控件 -->
+    <color name="mosaicblue">#20bcff</color>
+    <color name="mosaicdark">#77f0f0f0</color>
+
+    <!-- 所有黑色页面的背景色 -->
+    <color name="all_black_bg">#000000</color>
+    <color name="solid_red">#ffff0000</color>
+
+    <color name="select_textyellow">#fffed500</color>
+</resources>
